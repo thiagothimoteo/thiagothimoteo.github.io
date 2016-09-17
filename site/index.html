@@ -3,22 +3,103 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>(Site em Construção) Thiago Thimóteo - Web Designer/Front-end Developer</title>
+        <title>Thiago Thimóteo - Web Designer/Front-end Developer</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!--FONTS-->
-        <link href="https://fonts.googleapis.com/css?family=Lato|Lora" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Lora:400,700" rel="stylesheet">
 
         <!--STYLES -->
         <link rel="stylesheet" href="styles/styles.css">
     </head>
     <body>
-        <header class="header">
-            <!--<h1 class="main-phrase">Eager to <span>learn</span> and <span>do</span> awesome things.</h1>-->
-            <h1 class="main-phrase"><span>COMING SOON</span></h1>
+        <header id="home" class="header">
+            <div class="header-nav wrapper">
+                <div class="logo">
+                    <a href="#home">
+                        Thiago Thimóteo
+                        <span>Front-end Developer</span>
+                    </a>
+                </div>
+                <nav class="nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about-me">Sobre Mim</a></li>
+                        <li><a href="#portfolio">Portifolio</a></li>
+                        <li><a href="#form-contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <h1 class="main-phrase">
+                Eager to <strong>learn</strong> and <strong>do</strong> awesome things.
+            </h1>
+            <a href="#about-me" class="see-more"><span class="chevron bottom"></span></a>
         </header>
-        
-        <script src="scripts/app.js"></script>
+
+        <main>
+            <section id="about-me" class="spacing">
+                <div class="wrapper">
+                    <article class="bio">
+                        <img src="images/me.jpg">
+                        <h2 class="section-title">Um pouco <strong class="underline">sobre mim</strong></h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In nobis similique optio modi, voluptatem sit magnam inventore enim porro repudiandae.</p>
+                        <p>Sed vero, dolores sint ducimus laudantium officia, beatae dolore cupiditate magnam? Autem nostrum expedita reprehenderit dolor aut maxime. Impedit, temporibus.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores minima ullam deserunt explicabo animi quaerat cupiditate sequi unde impedit, iusto.</p>
+                    </article>
+                </div>
+            </section>
+            <section id="portfolio">
+                <div class="left">
+                    <h2 class="section-title">
+                        Alguns<br /> 
+                        <strong class="underline">projetos</strong>
+                    </h2>
+                </div>
+                <div class="works">
+                    
+                    <div class="card">
+                        <img src="images/placeimg_350_200_any.jpg">
+                        <div class="card-content">
+                            <h3 class="card-title">MiraiDev</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <a class="card-link" href="http://miraidev.com.br/" target="_blank">Ver site</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/placeimg_350_200_any.jpg">
+                        <div class="card-content">
+                            <h3 class="card-title">Qualittá Academia de Beleza</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <a class="card-link" href="http://www.cursoqualitta.com.br/" target="_blank">Ver site</a>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="images/placeimg_350_200_any.jpg">
+                        <div class="card-content">
+                            <h3 class="card-title">Ases Distribuidora</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <a class="card-link" href="http://www.asesdistribuidora.com.br/" target="_blank">Ver site</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="form-contato" class="contact spacing">
+            <div class="wrapper">
+                <h2 class="section-title">Entre em <strong class="underline">contato</strong></h2>
+                <form class="contact-form" action="https://formspree.io/thiago.thimoteo@gmail.com" method="POST">
+                    <input type="text" name="name" placeholder="Nome">
+                    <input type="email" name="_replyto" placeholder="E-mail">
+                    <textarea name="message" placeholder="Escreva aqui"></textarea>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </footer>
+        <script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+        <script src="scripts/scripts.js"></script>
     </body>
 </html>
+
