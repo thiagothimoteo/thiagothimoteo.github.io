@@ -4,12 +4,14 @@ import "./globals.css";
 
 const ibmPlexSerif = IBM_Plex_Serif({
   variable: "--font-family-serif",
-  weight: ['400', '600']
+  weight: ['400', '600'],
+  subsets: ['latin'],
 })
 
 const poppins = Poppins({
   variable: "--font-family-sans-serif",
-  weight: ['400', '600', '800']
+  weight: ['400', '600', '800'],
+  subsets: ['latin'],
 })
 
 export const metadata: Metadata = {
